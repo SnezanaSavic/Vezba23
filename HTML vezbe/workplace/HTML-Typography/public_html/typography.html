@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>HTML-Typography-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Snezana Savic">
+        <meta name="description" content="HTML working with tipograhy">
+        <meta name="keywords" content="html, tags, h1, h2, h3, h4, h5, h6,bold, strong, paragraph... ">
+    </head>
+    <body>
+
+
+        <h1>Text Formatting</h1>
+
+        <p>By following the examples below, we will learn the basics of web page text formatting.</p>
+
+        <div>
+            <h2>Headings (h1-h6)</h2>
+
+            <p> 
+                Headings help define the structure and content hierarchy of your web page. 
+                They are defined with the h1 to h6 tags, where h1 is the most important heading,
+                and h6 is the least important heading.
+            </p> 
+
+            <p>
+                There are several theories on how to use h1-6 tags.  The most important
+                thing to note is that h1-h6 tags are not used to determine the size of
+                the text. They serve to assign importance and value to your content.
+                Content that is shown in capital letters is not necessarily an h tag.
+            </p> 
+            <p>
+                It is extremely important to be consistent when using h1-h6 tags throughout
+                the the website. Therefore, you should get to know the website and its 
+                content before you begin its realization.
+            </p> 
+        </div>
+        <div>
+            <h2>Paragraph Usage</h2>
+            <p>
+                Paragraph (&lang;p&rang;) is one of the most basic tags for text formatting. 
+                It consists of the opening and closing tag, and it is a tag that you will
+                use the most.
+            </p>
+            <p>
+                It represents the majority of the text and each individual entirety is 
+                written in a new paragraph.
+            </p>
+        </div>
+        <div>
+            <h2> Line Breaks</h2>
+            <p>
+                Sometimes, you will need to transfer to a new line(row), but stay within
+                the same paragraph, meaning not create a new one. In order to that in HTML,
+                you will need to use the line break tag (&lang;br&rang;).
+            </p>
+            <p> 
+                Line break is an inline tag, which means you can use it within the h1-h6
+                tags or paragraph. 
+            </p>
+
+            <p>
+                It is a self-closing tag.For example, if we have an address written in
+                one paragraph (for now) LINE BREAK.
+                Is what we can use to separate the entities within the address as new 
+                lines(rows).
+            </p>
+        </div>
+        <!--
+        PUT THE FOLLOWING ADRESS IN A PARAGRAPH and show every following
+        entity as a separate line (row) using LINE BREAK 
+        -->
+        <address> 
+            cubes.rs ,<br>
+            Bulevar Mihajla Pupina 161,<br>
+            Novi Beograd, Srbija.
+        </address>
+        <div>
+            <h2>Highlighting Text</h2>
+
+            <p>
+                Often times, we have the need to highlight certain parts of the text, 
+                (one word, a few words) or even a whole phrase without exiting the paragraph.
+            </p> 
+
+            <p>HTML gives you a few ways to do this.</p> 
+
+            <div>
+                <h3>-Bold Tag</h3>
+                <p>
+                    Bold tag (&lang;b&rang;) is used when we want to highlight a certain part
+                    of the text (one word, a few words), or a whole phrase but
+                    <!-- BOLD THIS IN CAPITAL LETTERS meaning put in a b TAG --> 
+                    <b>ONLY VISUALLY.</b>
+                    Upon consideration it is removed, and then reintroduced with HTML5. 
+                </p>
+                <p>
+                    In a visual sense in the browser it is presented by <b>BOLDING </b>the text.
+                </p> </div>
+            <div>
+                <h3>-Strong Tag</h3>
+
+                <p>
+                    Using the strong tag (&lang;strong&rang;) means that the part of the text
+                    that is between this tag represents
+                    <!-- place the following line in a strong tag-->
+                    <strong>
+                        the part of the text that has greater meaning form the rest of the text.
+                    </strong>
+                </p> 
+
+                <p>
+                    Visually, it represented as bolded text. However, this tag also gives 
+                    importance to the text, as opposed to just the bold visual representation.
+                </p> 
+            </div>
+            <div>
+                <h3>-Italic Tag</h3>
+
+                <p> 
+                    Just like the bold tag, we use the italic tag when we want 
+                    to highlight a certain part of the text (one word, a few words) or a 
+                    whole phrase but 
+                    <!--THIS IN CAPITAL LETTERS place in the ITALIC TAG --> <i>ONLY VISUALLY.</i> 
+                    There is no meaning
+                    to the text, it is only visually represented with slanted text in the
+                    browser. 
+                </p>
+            </div>
+            <div>
+                <h3>-Emphasis Tag</h3>
+                <p>
+                    Emphasis tag (&lang;em&rang;),"em" tag, is also used when we want to highlight
+                    a certain part of the text (one word, a few words) or a whole phrase.
+                    However, unlike the ITALIC TAG, that only serves as a visual representation
+                    <!--THIS IN CAPITAL LETTERS place in the EMPHASIS TAG -->
+                    the <em>EMPHASIS TAG GIVES THE TEXT MORE MEANING AND IMPORTANCE,</em>
+                    than the rest of the text.
+                </p>
+
+                <p>In the browser it is visually represented with slanted text. </p>
+            </div>
+            <div>
+                <h3>-UNDERLINE TAG</h3>
+                <p>Underline Tag (&lang;em&rang;) is a tag that exclusively has VISUAL
+                    meaning only
+                    And it manifests by presenting the text between this tag like 
+                    <!-- PLACE THE FOLLOWING PART OF THE TEXT IN the UNDeRLINE TAG-->
+                    <u>UNDERLINED TEXT</u>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>NESTED Tags</h2>
+            <p> <i><b><u> Italic</u> </b></i> </p>
+            <p>Often times there is a question of why there are so many tags to bold
+                and
+                slant the text.
+                Perhaps the most confusing concepts in HTML. 
+                The easiest way yo explain this is the following.
+            </p>
+
+            <p>
+                One group of tags (BOLD and ITALIC tag) is only 
+                <!-- PLACE THIS WORD IN BOLD AND ITALIC TAG-->
+                <b>
+                    <i>
+                        PRESENTATIONAL,
+                    </i>
+                </b>
+                while the other group of tags is<!--PLACE THIS WORD IN STRONG AND EMPHASIS TAG-->
+                <strong> <em>LOGICAL. </em>
+                </strong>
+                Presentational tags are only used to style the text visually and nothing 
+                more, while the logical tags give meaning to the text, and also when 
+                searching the browser give importance to your text.
+            </p>
+        </div>
+        <div>
+         <h2>SPECIAL CHARACTERS</h2>
+
+            <p>
+                Certain elements are "reserved for HTML" which means they shouldn’t be used
+                as part of the text because they can cause problems in the HTML code 
+                and how its shown in the browser. 
+            </p>
+
+            <p>
+                FOR EXAMPLE, the use of the left parenthesis " &lang; " can cause problems in
+                how content is displayed in the browser because the browser can confuse 
+                it with an open tag.
+            </p>
+
+            <p>
+                This is why this character is considered a special character, even though
+                it can be entered using the keyboard.
+            </p> 
+
+            <!-- ENTER left parenthesis by USING SPECIAL CHARACTER-->
+            &lang; <br>
+
+            <!-- ENTER right parenthesis by USING SPECIAL CHARACTER-->
+            &rang;
+            <br>
+
+            <!-- EXCHANGE THE FOLLOWING CHARACTERS WITH SPECIAL CHARACTER-->
+
+            &dollar;
+
+
+            <!-- Separate this two elements with a horizontal line-->
+            <hr> 
+            <p> 
+                There are also cases where certain elements on the page can’t be entered
+                using the keyboard and the only way to do so is by using special characters
+
+            <p><!-- Enter the special character for copyright-->&copy; All rights reserved.</p>
+        </div>
+
+
+    </body>
+</html>

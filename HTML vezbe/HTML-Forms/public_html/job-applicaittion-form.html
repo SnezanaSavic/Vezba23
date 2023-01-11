@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML-Forms-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vladan Dzulovic - Cubes d.o.o">
+        <meta name="description" content="html form elements">
+        <meta name="keywords" content="html, input, data, multiple choice, password">
+        <style>
+            .container{
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frontend Course</h1>
+            <h2>HTML - Working with Forms</h2>
+
+
+            <form method="POST" action=""> 
+                <fieldset>
+                    <legend>Personal Information</legend> 
+                    <div>
+                        <label for="name">First Name</label> <br>
+                        <input id="name" value="" type="text" required="" 
+                               name="first_name" placeholder="john">
+                    </div> 
+                    <div>
+                        <label for="last_name">Last Name</label><br>
+                        <input id="last_name" value="" type='text' required 
+                               name='last_name' placeholder="Savic">
+                    </div> 
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input id='email' type="email" value="" required="" 
+                               placeholder="example@email.com" name="email">
+                    </div> 
+                    <div>
+                        <label for='phone'>Phone</label> <br> 
+                        <input id='phone' value="" type="tel" required="" 
+                               placeholder="+381649083244" name="phone">
+
+                    </div>
+                </fieldset> 
+                <fieldset>
+                    <legend>Position</legend> <br>
+                    <div>
+                        <select name="position" required=""> 
+                            <option value="">----</option>
+                            <option value="1">Frontend Developer</option> 
+                            <option value="2">Backend Developer</option> 
+                            <option value="3">iOS developer</option>
+                            <option value="4">Web Designer</option>
+                        </select> 
+                        <div>
+                            <label for="start">When can you start</label> <br>
+                            <input id='start' type="date" value="" name="start" 
+                                   required=""> 
+                            <label for="work">Last company you worked for 
+                            </label> <br> 
+                            <input id="work"  value='' type='text' 
+                                   name="company" required="">
+
+                        </div> 
+                        <div>
+                            <h5>Are you willing to relocate?</h5>
+                            <label>
+                                <input type="radio" value="yes" 
+                                       name="relocate" >Yes 
+                                <br> 
+
+                            </label> 
+                            <label>
+                                <input type="radio" value="No" 
+                                       name="relocate" >No 
+                            </label>
+                        </div> 
+                        <div> 
+                            <h5>Where you woud like to work?</h5> 
+                            <label>
+                                <input type="checkbox" value="belgrade" 
+                                       name="city[]"> Belgrade <br> 
+                            </label>
+                            <label>  
+                                <input type="checkbox" value="novi_Sad" 
+                                            name="city[]"> Novi Sad 
+                            </label> 
+                            <br>
+                            <label> 
+                                <input type="checkbox" value="nis" 
+                                           name="city[]"> Nis 
+                            </label>
+                        </div>
+
+
+                    </div>
+                </fieldset> 
+                <fieldset> 
+                     
+                        <legend>Additional</legend> 
+                    <label for="cv">CV</label> <br>
+                    <input id="cv" name="cv" type="file"> 
+                    <div>
+                        <label for="aditional">Aditional info</label>
+                        <textarea id='aditional' name="aditional" rows="7"
+                                  cols="70"></textarea>
+                    </div>
+                    
+                </fieldset> 
+                <button name="send" value="yes" type="submit" >Send </button>
+                <!-- 
+                Below this comment create job application form.
+                The form should contain several fieldset.
+                
+                First fieldset - personal data (name-required, lastname-required, email-required, phone-required)
+                Use label and placeholder and "for-id" way of connection
+                
+                
+                Second Fieldset - Job detail
+                
+                Position you are applying for(required) - select (Frontend developer, Backend developer, iOS developer, Web Designer)
+                When can you start - (input date) 
+                Last company you worked for - (input text)
+                Are you willing to relocate? (radio -  yes, no)
+                Where you woud like to work? (checkbox - Belgrade, Novi Sad, Niš, )
+                
+                
+                
+                
+                
+                
+                
+                
+                Third fieldset - Aditional
+                CV - file upload
+                Aditional info - textarea
+                
+                
+                Send button
+                -->
+
+            </form>
+
+
+
+
+
+        </div>
+    </body>
+</html>

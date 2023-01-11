@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML-Forms-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vladan Dzulovic - Cubes d.o.o">
+        <meta name="description" content="html form elements">
+        <meta name="keywords" content="html, input, data, multiple choice, password">
+        <style>
+            .container{
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frontend Course</h1>
+            <h2>HTML - Working with Forms</h2>
+
+
+
+            <!-- 
+            Below this comment create login form.
+            The form should contain 2 fields and an option to send,
+            grouped by fieldset.
+            First field - User should enter the email.
+            Second field - User should enter the password.
+            Use label tag and "for-id" way of connection.
+            -->
+            <form method="POST" action="">
+                <fieldset> 
+                    <legend>Login</legend>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input id="email" type="email" name="email" value=""
+                               required="" placeholder="example@email.com"> 
+                        <div>
+                            <label for="password">Password</label><br> 
+                            <input name="password" type="password" value=""
+                                   id="password" required="">
+                        </div>
+                    </div> 
+                </fieldset> 
+                <button name="send" type="submit" value="yes"
+                        >SEND</button>
+
+            </form>
+
+
+
+
+        </div>
+    </body>
+</html>

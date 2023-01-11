@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML-Forms-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vladan Dzulovic - Cubes d.o.o">
+        <meta name="description" content="html form elements">
+        <meta name="keywords" content="html, input, data, multiple choice, password">
+        <style>
+            .container{
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frontend Course</h1>
+            <h2>HTML - Working with Forms</h2>
+
+
+            <form method="Get" action>
+                <!-- 
+                Text based inputs
+                --> 
+                <fieldset> <legend> Text based elements</legend>
+                    <!--Name start-->
+                    <div> 
+                        <label for="name">Name</label><br> 
+                        <input id="name" type="text" name="name" value 
+                               placeholder="Marc">
+                    </div> 
+                    <div><!-- Password start --> 
+                        <label for="password" >Password</label> <br>
+                        <input id="password" type="password" name="password" value="" required="">
+
+                    </div><!--Password end--> 
+                    <!-- Email start --> 
+                    <div> 
+                        <label for="email">Email</label><br>
+                        <input id="email" name="Email" type="email" value=""
+                               required="" placeholder="example@mail.com">
+
+                    </div><!-- Email end -->  
+
+                    <!-- Phone start --> 
+                    <div>
+                        <label for="number">Phone</label> <br> 
+                        <input id="number" name="number" type="tel" value="" 
+                               required="" placeholder="02540215">
+                    </div> <!--Phone end--> 
+                    <!--Web start--> 
+                    <div> 
+                        <label for="website"> Web site </label><br> 
+                        <input id="website" type="url" name="website" value="" 
+                               placeholder="http://example.com">
+                    </div> 
+                    <!--Web end--> 
+                    <!--Message start--> 
+                    <div>
+                        <label for="message">Message</label><br> 
+                        <textarea id="message" name="Message" 
+                                  placeholder="message" autofocus="" rows="7" cols="50"> </textarea>
+                    </div> 
+                    <!--Message end-->
+
+                </fieldset> <!-- Name end -->
+
+
+
+                <!--
+                Multiple Choice
+                -->
+                <fieldset>
+                    <legend>Multiple Choice</legend> 
+                    <h5>Please select areas that are part of HTML course</h5>
+                    <label>
+                        <input type="checkbox" name='frontend_areas{}' 
+                               value="html">HTML
+                    </label> 
+                    <label>
+                        <input type="checkbox" name='frontend_areas{}'  
+                               value="CSS">CSS
+                    </label> 
+                    <label>
+                        <input type="checkbox" name='frontend_areas{}' 
+                               value="object_c">Object C
+                    </label> 
+                    <label> 
+                        <input type="checkbox" name='frontend_areas{}'
+                               value="SASS">SASS
+                    </label> 
+                    <div> 
+                        <h5>Which one are you learning now</h5>
+
+                        <label> 
+                            <input type="radio" name="curreny_area" 
+                                   value="html">HTML
+
+                        </label> 
+                        <label> 
+                            <input type="radio" name="curreny_area" 
+                                   value="CSS">CSS
+                        </label> 
+                        <label>
+                            <input type="radio" name="curreny_area" 
+                                   value="object_c">Object C
+
+                        </label> 
+                        <label> 
+                            <input type="radio" name="curreny_area" 
+                                   value="SASS">SASS
+
+                        </label>
+
+
+                    </div> 
+
+                    <div>
+                        <label for='country'>Country</label> 
+                        <select name="country" id="country"> 
+                            <optgroup label="Europe"> 
+                                <option value="">--</option>
+                                <option value="Serbia">Serbia</option> 
+                                <option value="Italy">Italy</option>
+                                <option value='Spain'>Spain</option>
+                            </optgroup> 
+                            <optgroup label="Asia"> </optgroup> 
+                            <option value="China"> China</option> 
+                            <option value="japan">Japan</option>
+                            <option value="uae">UAE</option> 
+                        </select>
+                    </div>  
+                    <div>
+                        <label for="cv">CV</label>
+                        <input id="cv" type="file" name="file">
+                    </div> 
+                    <div>
+                        <button type="submit" name="send" 
+                                value="yes">Send</button> 
+                        <button type="reset" name="reset" value="yes"> Reset</button>
+                    </div>
+
+                </fieldset>
+
+
+
+
+
+
+                <!--
+                File upload
+                -->
+
+
+
+
+
+                <!--Form Submition-->
+
+
+
+
+
+
+
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML-Tables-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Snezana Savic">
+        <meta name="content" content="html tables">
+        <meta name="keywords" content="html, tables">
+        <style>
+            .container{
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frontend Course</h1>
+            <h2>HTML - Working with Tables</h2>
+
+
+            <!-- 
+             Below this comment create a basic table that will look as image table-01.png
+            -->
+
+            <table border="1"> 
+                <tr> <th> Student Name</th> 
+                    <th> HTML </th> 
+                    <th> CSS </th> 
+                    <th>JavaScript</th>
+                </tr>
+                <tr> <th>Student One</th>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr> 
+                <tr>
+                    <th> Student Two </th>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                </tr> 
+                <tr>
+                    <th>Student Three</th>
+                    <td>4</td>
+                    <td>3</td> 
+                    <td>3</td>
+                </tr>
+                <tr>  <th> Student Four </th> 
+                    <td>3</td> 
+                    <td>5</td> 
+                    <td>5</td> 
+                </tr> 
+                <tr> <th>Average</th> 
+                    <td>4.00</td> 
+                    <td>4.25</td> 
+                    <td>4.00</td> 
+                </tr>
+            </table>
+
+
+
+            <!-- 
+             Below this comment create a full table that will look as image table-01a.png
+            --> 
+            <table border="1"> 
+                <caption> Table 1.a: Student's success in each area of the course
+                </caption> 
+                <thead>
+                    <tr> <th> Student Name</th> 
+                        <th> HTML </th> 
+                        <th> CSS </th> 
+                        <th>JavaScript</th>
+                    </tr> 
+                </thead> 
+                <tbody>
+                    <tr> <th>Student One</th>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr> 
+                    <tr>
+                        <th> Student Two </th>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>4</td>
+                    </tr> 
+                    <tr>
+                        <th>Student Three</th>
+                        <td>4</td>
+                        <td>3</td> 
+                        <td>3</td>
+                    </tr>
+                    <tr>  <th> Student Four </th> 
+                        <td>3</td> 
+                        <td>5</td> 
+                        <td>5</td> 
+                    </tr> 
+                </tbody> 
+
+                <tfoot>
+                    <tr> <th>Average</th> 
+                        <td>4.00</td> 
+                        <td>4.25</td> 
+                        <td>4.00</td> 
+                    </tr> 
+                </tfoot>
+            </table>
+
+
+
+
+
+            <!-- 
+             Below this comment create a  table that will look as image table-02.png
+            -->
+
+            <table border="5"> <thead>
+                    <tr> 
+                        <th rowspan="2">Students Name</th>
+                        <th colspan="3"> Area </th> 
+                    </tr> 
+                    <tr>  
+                        <th>HTML</th> 
+                        <th>CSS </th>
+                        <th>Java Script </th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr> <th>Student One</th>
+                        <td>5</td> 
+                        <td>4</td>
+                        <td>5</td>
+                    </tr> 
+                    <tr> <th>Student Two</th>
+                        <td>4</td> 
+                        <td>5</td>
+                        <td>4</td>
+                    </tr> 
+                    <tr> <th>Student Three</th>
+                        <td>4</td> 
+                        <td>3</td>
+                        <td>3</td>
+                    </tr> 
+                    <tr> <th>Student Four</th>
+                        <td>3</td> 
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                </tbody> 
+                <tfoot> 
+                    <tr>  
+                        <th> Average</th> 
+                        <td>4.00</td> 
+                        <td>4.25</td> 
+                        <td>4.00</td>
+
+                    </tr>
+                </tfoot>
+            </table>
+
+
+
+
+        </div>
+    </body>
+</html>

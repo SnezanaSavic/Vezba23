@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML-Tables-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Snezana Savic">
+        <meta name="content" content="html tables">
+        <meta name="keywords" content="html, tables ">
+        <style>
+            .container{
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frontend Course</h1>
+            <h2>HTML - Working with Tables</h2>
+            <h3>Tables chalange</h3>
+
+
+            <p>Task One:</p>
+            <!-- 
+             Below this comment create a  table that will look as image table-challenge-01.png
+            -->
+
+            <table border="1"> 
+                <caption> Table 01: Company stock </caption> 
+                <thead> 
+                    <tr>
+                        <th>Products</th> 
+                        <th>Stock</th> 
+                        <th>Qantity</th> 
+                        <th>Price</th> 
+                        <th>Total</th> 
+
+
+                    </tr>
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>Modem</td> 
+                        <td>On stock</td> 
+                        <td>1</td> 
+                        <td>100$</td> 
+                        <td>100$</td>
+                    </tr>
+                </tbody>
+                <tbody> 
+                    <tr> 
+                        <td>Tablet</td> 
+                        <td>On stock</td> 
+                        <td>5</td> 
+                        <td>70$</td> 
+                        <td>350$</td>
+                    </tr>
+                </tbody> 
+                <tbody> 
+                    <tr> 
+                        <td>Computer</td> 
+                        <td>On stock</td> 
+                        <td>1</td> 
+                        <td>200$</td> 
+                        <td>200$</td>
+                    </tr>
+                </tbody> 
+                <tfoot> 
+
+                    <tr> 
+                        <td colspan='3'>Total</td> 
+                        <td>On stock</td> 
+                        <td>750$</td>
+                    </tr>
+
+                </tfoot>
+
+
+            </table>
+
+
+
+
+
+            <p>Task Two:</p>
+            <!-- 
+             Below this comment create a  table that will look as image table-challenge-02.png
+            -->
+            <table border> 
+                <caption>Table 02: Company coutse schedule </caption> 
+                <thead> 
+                    <tr>
+                        <th rowspan='2'>Course</th> 
+                        <th rowspan='2'>Day</th> 
+                        <th colspan="2">Schedule</th> 
+
+                    </tr> 
+                    <tr>  
+                        <th>Start</th> 
+                        <th>End</th> 
+
+
+                    </tr>
+                </thead> 
+                <tbody> 
+                    <tr> <th rowspan="2">Frontend</th> 
+                        <td>Tuesday</td> 
+                        <td rowspan="2">13:00</td> 
+                        <td rowspan="2">16:00</td>
+
+
+
+                    </tr> 
+                    <tr>
+                        <td>Wendesday</td> 
+
+
+
+                    </tr> 
+
+                </tbody> 
+                <tbody> 
+                    <tr> 
+                        <th rowspan="3">Beckend</th> 
+                        <td>Monday</td> 
+                        <td rowspan="3">13:00</td> 
+                        <td rowspan="3">16:00</td>
+                    </tr> 
+                    <tr> 
+                        <td>Wendesday</td> 
+
+
+                    </tr> 
+
+                    <tr> 
+                        <td> Friday </td> 
+                    </tr> 
+                </tbody>
+
+
+
+
+            </table>
+
+
+        </div> 
+
+        <!-- //proba********************************** --> 
+        <p>Task Three:</p>
+        <!-- 
+         Below this comment create a  table that will look as image table-challenge-01.png
+        -->
+
+        <table border="1">  
+            <thead>  
+                <tr> 
+                    <th>Ime</th> 
+                    <th rowspan="3">Marko Savic</th> 
+                    <th rowspan="2">m</th> 
+                    <th rowspan="2">z</th> 
+                    <th rowspan="2">v</th>
+
+                </tr> 
+                <tr> <th>Prezime</th> 
+                      
+                  
+                </tr> 
+                <tr>
+                    <th>Nadimak</th> 
+                  <th colspan="3">pol</th>
+                </tr>
+            </thead> 
+            <tbody> 
+                <tr>
+                    <td>Godina</td>
+                    <td rowspan="2">30.03.1997.</td> 
+                    <td colspan="3">Dragan</td>
+
+                </tr>
+                <tr>
+                    <td rowspan="2">Mesto</td> 
+
+                    <td colspan="3">Ljiljana</td> 
+                </tr> 
+                <tr> 
+                    <td>Uzice</td>
+                    <td colspan="3">Marko</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table border="1"> 
+            <thead>
+            <tr> 
+            
+                <th> Marko </th> 
+                <th>1</th> 
+                <th>2</th>
+                <td colspan="2">Azbuka</td>
+            
+                
+            </tr> 
+            <tr>
+                <th>Darko</th>
+                <th rowspan="2" colspan="2">Broj</th>
+                <th rowspan="2" colspan="2">Slovo</th>
+                
+            </tr>
+            <tr>
+                <th>Sneza</th> 
+            </tr> 
+            <tr> 
+                <th>Dupence</th>
+                <th colspan="2">jednako</th>
+                <th>a</th> 
+                <th>b</th>
+                
+            </tr>  
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>Bravo</td> 
+                    <td colspan="4">Sneki</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </body> 
+    
+
+
+
+
+
+
+</html>

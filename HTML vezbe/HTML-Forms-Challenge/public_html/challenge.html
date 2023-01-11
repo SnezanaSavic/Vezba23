@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HTML-Forms-Frontend</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vladan Dzulovic - Cubes d.o.o">
+        <meta name="description" content="html form elements">
+        <meta name="keywords" content="html, input, data, multiple choice, password">
+        <style>
+            .container{
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Frontend Course</h1>
+            <h2>HTML - Working with Forms</h2>
+            <h3>Challenge</h3>
+
+
+
+            <!-- 
+
+                
+            Below this comment create registation form for course.
+            Registration form should use POST method and should look like image registration-form.jpg from "images" folder. 
+            Image course_list.png from folder
+            "images" will show you course list option
+            
+            
+            --> 
+            <form method="POST" action="">
+                <fieldset>
+                    <legend>Personal data</legend>
+                    <div> 
+                        <label for="name">Name</label> <br>
+                        <input id="name" value="" type="text" required="" 
+                               placeholder="Sneza"> 
+                    </div> 
+                    <div> 
+                        <label for="lastName">Last name</label> <br>
+                        <input id="lastName" value="" type="text" required="" 
+                               placeholder="Smit"> 
+                    </div> 
+                    <div> 
+                        <label for="phone">Phone</label> <br>
+                        <input id="phone" value="" type="tel"  
+                               placeholder="+381649083244"> 
+                    </div> 
+                    <div> 
+                        <label for="email">Email</label> <br>
+                        <input id="email" value="" type="email" required="" 
+                               placeholder="example@email.com"> 
+                    </div> 
+
+                </fieldset> 
+                <fieldset>
+                    <legend>Password</legend> <br>
+                    <div> <label for="password">Password</label> <br>
+                        <input id=password type="password" name="password" value="" 
+                               required="" 
+                               placeholder="....." maxlength="10"> 
+                    </div> 
+                    <div> 
+                        <label for="repeat">Repeat password</label> <br>
+                        <input id=repeat type="password" name="re_password" value="" 
+                               required="" placeholder="....." maxlength="10">
+
+                    </div>
+
+                </fieldset> 
+                <fieldset>
+                    <legend>Course wish</legend> 
+                    <br> 
+
+                    <div> 
+                        <label for="course"> Course list: </label>
+                        <select id=course name="course" required=""> 
+                            <option value=""> --Chose course-- </option>
+                            <option value="1">iOS development</option>
+                            <option value="2">frontend development</option> 
+                            <option value="3">web development</option> 
+                            <option value="4">android development</option>
+
+                        </select>
+                    </div> </fieldset>
+                <div>
+                    <fieldset> 
+                        <h5>Tearm of course</h5> 
+                        <div>
+
+                            <label>
+                                <input type="radio" name=term 
+                                       required="" value="1">9:00-12:00 </label> <br>
+
+                            <label>
+                                <input 
+                                    type="radio" name="term" 
+                                    required="" 
+                                    value="2">13:00-16:00 </label><br> 
+
+                            <label>
+                                <input  type="radio" name="term" 
+                                        required="" value="3">18:00-21:00 
+                            </label><br> 
+                        </div>
+                    </fieldset>
+                </div> 
+                <div>
+                    <label> 
+                        <input name="privacy" required="" 
+                               type="checkbox" value="1">
+                        I've red and acccept Privacy police 
+                    </label></div>
+
+                <div>
+                    <label>
+                        <input name="terms" required="" 
+                               type="checkbox" value="2">
+                        I've red and acccept Terms of use 
+                    </label> </div>
+
+                <button type='submit' name="send" value='yes'>Send</button>
+
+
+
+
+            </form>
+
+
+
+
+        </div>
+    </body>
+</html>
